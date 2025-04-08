@@ -1,0 +1,41 @@
+h1{
+    font-size: 60px;
+    color: blue;
+}
+img{
+    width: 250px;
+    border-radius: 10%;
+}
+body{
+    background-color: rgba(255, 255, 0, 0.653);
+}
+
+.precio{
+    font-size: 40px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw, 40vw 30vw;
+    grid-template-rows: auto 50vh 20vh;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "imagen descripcion descripcion"
+                         "opiniones opiniones opiniones"
+}
+
+#caja1{
+    font-size: 10px;
+}
+
+.descripcion {
+    grid-area: descripcion;
+}
+.comentario{
+    background-color: blue;
+    grid-area: comentario;
+}
+.imagen{
+    grid-area: imagen;
+}
