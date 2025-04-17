@@ -1,41 +1,53 @@
-h1{
-    font-size: 60px;
-    color: blue;
-}
-img{
-    width: 250px;
-    border-radius: 10%;
-}
-body{
-    background-color: rgba(255, 255, 0, 0.653);
+h1 {
+  font-size: 60px;
+  color: rgb(37, 37, 201);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.precio{
-    font-size: 40px;
+.titulo{
+    font-size: 20px;
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-area: titulo;
 }
 
-.container {
+img {
+  width: 250px;
+  border-radius: 10%;
+}
+body {
+  background-color: rgb(253, 253, 53);
+}
+.nombreProducto{
+    grid-area: nombreProducto;
+}
+.precio {
+  font-size: 20px;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.publicacion {
     display: grid;
-    grid-template-columns: 20vw, 40vw 30vw;
-    grid-template-rows: auto 50vh 20vh;
-    grid-template-areas: "cabecera cabecera cabecera"
-                         "imagen descripcion descripcion"
-                         "opiniones opiniones opiniones"
-}
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto 50vh 20vh, auto;
+    grid-template-areas:
+      "imagen titulo titulo titulo"
+      "imagen precio precio precio"
+      "imagen descripcion descripcion descripcion"
+      "opiniones opiniones opiniones opiniones";
+  }
 
-#caja1{
-    font-size: 10px;
-}
 
 .descripcion {
-    grid-area: descripcion;
+  grid-area: descripcion;
+  margin-bottom: 0px;
+  margin-right: 40px;
 }
-.comentario{
-    background-color: blue;
-    grid-area: comentario;
+.comentario {
+  background-color: blue;
+  grid-area: comentario;
 }
-.imagen{
-    grid-area: imagen;
+.imagen {
+  grid-area: imagen;
 }
+
